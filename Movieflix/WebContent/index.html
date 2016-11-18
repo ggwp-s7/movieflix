@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Movie Flex-Home</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css"> 
+	<link rel="stylesheet" type="text/css" href="css/login.css"> 
+</head>
+<body>
+	<!-- Navigation Bar-->
+	<ul id="navbar">
+		
+		<li><a href="movies">Movies</a></li>
+		<li><a href="aboutus">About Us</a></li>
+		<li><a href="contactus">Contact Us</a></li>
+		<li class="login"><a id="login" href="#">Login</a></li>
+
+		<li class="login"><a id="signup" href="signup.html">Sign Up</a></li>
+	</ul>
+	<!---------------------------------------------------------------------->
+	<!------------------------------Mid Body-------------------------------->
+	<p align="center" class="heading">Now Showing</p>
+	<div class="movieList">
+		<a class="viewall">Veiw All</a>
+	</div>
+	<p align="center" class="heading">Coming Soon</p>
+	<div class="movieList">
+		<a class="viewall">Veiw All</a>
+	</div>
+	<div id="userType"></div>
+	<!-- Login Bar -->
+	<div id="loginform" align="center">
+		<form method="POST" action="j_security_check">
+			<input name="j_username" id="uid" placeholder="User Id" type="text">
+			<input name="j_password" id="password" placeholder="***" type="password">
+			<input class="dologin" id="logbtn" value="Login" type="submit"> 
+			<input class="dologin" id="cnclbtn" value="Cancel" type="submit"></input>
+		</form>
+	</div>
+</body>
+
+<script src="js/logineffect.js"></script>
+</body>
+</html>

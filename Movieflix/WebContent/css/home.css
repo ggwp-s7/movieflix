@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-color:#323f;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color: #633;
+	overflow: hidden;
+	border-radius:5px;
+}
+
+li{
+	float:left;
+}
+
+li a{
+	display:block;
+	color:white;
+	padding: 14px 16px;
+	margin-right:50px;
+	margin-left:10px;
+	text-decoration: none; 
+}
+
+li a:hover{
+	background-color:#111;
+}
+.login{
+	float:right;
+}
+.movieList{
+	width:900px;
+	height:300px;
+	border:solid;
+	margin:auto;
+	margin-top:20px;
+	z-index:-1;
+	overflow:auto;
+}
+
+.heading{
+	font-family: "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#36831;
+}
+.viewall{
+	float:right;
+
+	
+}
