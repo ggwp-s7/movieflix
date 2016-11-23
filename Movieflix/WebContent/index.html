@@ -14,8 +14,8 @@
 		<li><a href="aboutus">About Us</a></li>
 		<li><a href="contactus">Contact Us</a></li>
 		<li class="login"><a id="login" href="#">Login</a></li>
-
 		<li class="login"><a id="signup" href="signup.html">Sign Up</a></li>
+		<li class="login"><a>Guest</a></li>
 	</ul>
 	<!---------------------------------------------------------------------->
 	<!------------------------------Mid Body-------------------------------->
@@ -30,9 +30,9 @@
 	<div id="userType"></div>
 	<!-- Login Bar -->
 	<div id="loginform" align="center">
-		<form method="POST" action="j_security_check">
-			<input name="j_username" id="uid" placeholder="User Id" type="text">
-			<input name="j_password" id="password" placeholder="***" type="password">
+		<form method="POST" action="movies">
+			<input name="email" id="uid" placeholder="Email" type="text">
+			<input name="password" id="password" placeholder="***" type="password">
 			<input class="dologin" id="logbtn" value="Login" type="submit"> 
 			<input class="dologin" id="cnclbtn" value="Cancel" type="submit"></input>
 		</form>
