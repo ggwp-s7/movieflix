@@ -14,7 +14,7 @@
 		<c:forEach var="movie" items="${movieslist}">
 			<tr>
 				
-				<td><img src="<%=request.getContextPath()%>/images/${movie.image}"></td>
+				<td><img class="poster" src="<%=request.getContextPath()%>/images/${movie.image}"></td>
 			</tr>
 		</c:forEach>
 	</table>
