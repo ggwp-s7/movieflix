@@ -5,7 +5,7 @@ import java.io.IOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
-import javax.servlet.RequestDispatcher;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -37,7 +37,7 @@ public class LoginFilter implements Filter {
 		if(userResult!=null){
 			HttpSession session= request.getSession();
 			user.setUsername(userResult.getUsername());
-			request.setAttribute("user", user);
+			session.setAttribute("user", user);
 		}
 		chain.doFilter(request,response);
 	}

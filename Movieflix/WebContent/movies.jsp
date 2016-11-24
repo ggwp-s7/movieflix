@@ -19,7 +19,7 @@
 		<li><a href="contactus">Contact Us</a></li>
 		<li class="login"><a id="login" href="#">Login</a></li>
 		<li class="login"><a id="signup" href="signup.html">Sign Up</a></li>
-		<li class="login"><a><%=((User)request.getAttribute("user")).getUsername()%></a></li>
+		<li class="login"><a><%=((User)session.getAttribute("user")).getUsername()%></a></li>
 	</ul>
 	<!---------------------------------------------------------------------->
 	<!------------------------------Mid Body-------------------------------->
@@ -29,7 +29,7 @@
 	</div>
 	<p align="center" class="heading">Coming Soon</p>
 	<div class="movieList">
-		<a class="viewall" href="comingsoon">Veiw All</a>
+		<a class="viewall" href="movielist.jsp?showtime=comingsoon">Veiw All</a>
 	</div>
 	
 </body>
